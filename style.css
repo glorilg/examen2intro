@@ -1,0 +1,32 @@
+/*estilo genereral para la galeria*/
+.galeria {
+    display: flex; /*utiliza flex box para la galeria*/
+    flex-wrap: wrap; /*permite que las imagenes se ajusten a multiples filas*/
+    justify-content: center; /*centra las imagenes horizontal*/
+    gap: 10px; /*espacio entre las imagenes*/
+    max-width: 800px; /*ancho maximo*/
+    margin: 0 auto; /*centra la galeria en la pagina*/
+}
+/*estilo para las imagenes*/
+.galeria img {
+    width: 50%; /*ajuste de ancho en las imagenes*/
+    height: auto; /*mantiene la pocision de la imagen*/
+    object-fit: cover; /*cubre el area sin distorsionar la imagen*/
+    transition: all 0.3s ease; /*transicion suave para efecto
+}
+.galeria img {
+    border-radius: 50px; /*borde redondeados*/
+    box-shadow: 0px 2px 5px rgba(228, 42, 42, 0.2);
+    transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+    .galeria img {
+        width: 48%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria img {
+        width: 95%; 
+    }
+}
